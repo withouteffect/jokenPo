@@ -109,7 +109,7 @@ p{
 
     .buttons{
         flex-direction: row;  /* Alterando a direção dos botões para uma linha */
-        gap: 3vw; /* Adicionando espaçamento entre os botões */
+        gap: 6vw; /* Adicionando espaçamento entre os botões */
     }
 
 }
@@ -125,6 +125,6 @@ p{
     }
 
     .buttons {
-        gap: 2vw; /* Adicionando espaçamento entre os botões */
+        gap: 5vw; /* Adicionando espaçamento entre os botões */
     }
 }
