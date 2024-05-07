@@ -37,7 +37,7 @@ button{
 .buttons{
     margin: 30px 0;
     display: flex;
-    gap: 40px;
+    gap: 5vw;
 }
 button:hover{
     opacity: 0.7;
@@ -80,3 +80,50 @@ p{
     color: #831925;
 }
 
+.result {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: yellow; /* cor padrão e empate */
+}
+ 
+
+.result.green {
+    color: green; /* cor para ganhou */
+}
+
+.result.red {
+    color: red; /* cor para derrota */
+}
+
+@media (max-width:500px) {
+    body{
+        width: calc(100% - 40px); /* 100% menos 40px (20px de cada lado) */
+        margin: 0 auto; /* Centralizando o body */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10%;
+    }
+
+    .buttons{
+        flex-direction: row;  /* Alterando a direção dos botões para uma linha */
+        gap: 3vw; /* Adicionando espaçamento entre os botões */
+    }
+
+}
+
+@media (max-width: 400px) {
+    body {
+        width: calc(100% - 40px); /* 100% menos 40px (20px de cada lado) */
+        margin: 0 auto; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px; /* Adicionando um padding de 10px nas laterais */
+    }
+
+    .buttons {
+        gap: 2vw; /* Adicionando espaçamento entre os botões */
+    }
+}
