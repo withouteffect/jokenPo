@@ -10,24 +10,35 @@
 
 <body>
     <div class="container">
-        <h1> JokenPô </h1>
+        <h1>JockenPô</h1>
 
-        <div class="buttons">  
-            <button id="rock" onclick="playHuman('rock')"> &#x1F44A;</button>
-            <button id="paper" onclick="playHuman('paper')" >&#x1f590;</button>
-            <button class="scissors" id="scissors" onclick="playHuman('scissors')" >&#x270c;</button>
+        <div class="buttons">
+            <button id="rock" onclick="playHuman('rock')">&#x1F44A;</button>
+            <button id="paper" onclick="playHuman('paper')">&#x1f590;</button>
+            <button class="scissors" id="scissors" onclick="playHuman('scissors')">&#x270c;</button>
         </div>
-        <p class="result result.green result.red"> </p>
-      
+
+        <div class="choices">
+            <div class="human-choice">  
+              <div class="choice">   
+                <span>Você:</span>
+              </div> 
+            </div>
         
+            <div class="machine-choice">   
+                <div class="choice">
+                    <span>Máquina:</span>
+                </div>
+             </div>
+        </div>
+
+        <p class="result"></p>
+
         <p class="your-score">Sua pontuação: <span id="human-score">0</span></p>
-        <p class="machine-score">Pontuação da Maquina: <span id="machine-score">0</span></p>
-
-
+        <p class="machine-score">Pontuação da Máquina: <span id="machine-score">0</span></p>
     </div>
 
+    <script src="./scripts.js"></script>
 </body>
- 
-<script src="./javaScripts.js"></script>
-</html>
 
+</html>
